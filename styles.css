@@ -1,0 +1,193 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+/* Universal styles and variables setup */
+html {
+  --text-outline: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+  --text-outline-hover: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff,
+    -1.5px 1.5px 0 #fff, 1.5px 1.5px 0 #fff;
+}
+
+body {
+  font-family: "Shrikhand", cursive;
+  color: #794630;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Nav and header styling */
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 40px;
+  transition: all 250ms;
+}
+
+a:hover {
+  color: #000;
+  text-shadow: var(--text-outline-hover);
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background: no-repeat url("images/hero.jpg") center center/cover;
+  color: #fff;
+  text-shadow: var(--text-outline);
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+}
+
+.hero-flex-container h2 {
+  font-size: 3rem;
+}
+
+.hero-flex-container p {
+  font-size: 2rem;
+  margin: 30px 0;
+}
+
+.btn {
+  background: #d9d9d9;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+/* Overlay to darken background image */
+.overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: #000;
+  opacity: 0.4;
+}
+
+/* About styling */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#about h2 {
+  padding-bottom: 20px;
+}
+
+.brewing {
+  padding: 30px;
+}
+
+.origin {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cont {
+  margin: auto auto;
+  width: 48%;
+  padding: 0 20px;
+}
+.image {
+  width: 51.5%;
+}
+
+.flex-container-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background: #f8f8f8;
+}
+
+.flex-container-row.col2-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Menu Styling */
+
+#menu {
+  margin: 20px 0;
+}
+
+.flex-container-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu img {
+  width: 160px;
+  float: right;
+}
+
+.menu-side {
+  padding: 0 20px;
+}
+
+.left-menu {
+  width: 50%;
+  border-right: 2px solid #794630;
+}
+
+.right-menu {
+  width: 50%;
+}
+
+#menu h2 {
+  text-decoration: underline;
+  padding: 20px 0;
+}
+#menu p {
+  padding: 0 20px;
+  position: relative;
+}
+
+#menu .price {
+  float: right;
+}
