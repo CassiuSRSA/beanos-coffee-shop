@@ -12,6 +12,8 @@
 html {
   --text-outline: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000,
     1.5px 1.5px 0 #000;
+  --text-outline-thin: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   --text-outline-hover: -1.5px -1.5px 0 #fff, 1.5px -1.5px 0 #fff,
     -1.5px 1.5px 0 #fff, 1.5px 1.5px 0 #fff;
 }
@@ -190,4 +192,48 @@ nav {
 
 #menu .price {
   float: right;
+}
+
+/* Footer styling */
+
+footer {
+  background: #eeeeee;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+i {
+  margin: 10px;
+  transition: 500ms linear;
+  cursor: pointer;
+}
+
+i:hover {
+  color: black;
+  transform: translateY(-2px);
+}
+
+footer h2 {
+  text-shadow: var(--text-outline);
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+}
+
+.contacts {
+  text-align: right;
+}
+
+.address-heading {
+  padding-bottom: 10px;
 }
