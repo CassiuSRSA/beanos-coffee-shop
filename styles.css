@@ -82,6 +82,7 @@ nav {
   align-items: center;
   flex-direction: column;
   min-height: 85vh;
+  text-align: center;
 }
 
 .hero-flex-container h2 {
@@ -90,7 +91,9 @@ nav {
 
 .hero-flex-container p {
   font-size: 2rem;
-  margin: 30px 0;
+  margin: 30px;
+  padding: 0 30px;
+  text-align: center;
 }
 
 .btn {
@@ -237,4 +240,18 @@ footer h2 {
 
 .address-heading {
   padding-bottom: 10px;
+}
+
+/* Responsiveness through media queries */
+@media (max-width: 760px) {
+  .origin {
+    flex-direction: column-reverse;
+  }
+
+  .cont {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
 }
