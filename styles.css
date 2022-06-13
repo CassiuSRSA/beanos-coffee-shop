@@ -50,7 +50,8 @@ a {
   transition: all 250ms;
 }
 
-a:hover {
+a:hover,
+a:active {
   color: #000;
   text-shadow: var(--text-outline-hover);
 }
@@ -199,10 +200,9 @@ nav {
 
 /* Footer styling */
 
-footer {
+.footer-container {
   background: #eeeeee;
   display: flex;
-  width: 100%;
   justify-content: space-between;
   padding: 10px 30px;
 }
@@ -220,12 +220,13 @@ i {
   cursor: pointer;
 }
 
-i:hover {
+i:hover,
+i:active {
   color: black;
   transform: translateY(-2px);
 }
 
-footer h2 {
+.footer-container h2 {
   text-shadow: var(--text-outline);
   text-align: center;
 }
@@ -244,14 +245,54 @@ footer h2 {
 
 /* Responsiveness through media queries */
 @media (max-width: 760px) {
+  /* Removed nav, due to few links */
+  nav {
+    display: none;
+  }
+  /* Making about section responsive */
   .origin {
     flex-direction: column-reverse;
   }
 
   .cont {
-    width: 100%;
+    width: 80%;
+    padding: 20px 0;
   }
   .image {
     width: 100%;
+  }
+
+  .flex-container-row.col2-reverse {
+    flex-direction: column-reverse;
+  }
+  /* Making menu responsive */
+
+  .flex-container-menu {
+    flex-direction: column;
+  }
+
+  .left-menu {
+    width: 90%;
+    border-right: none;
+  }
+
+  .right-menu {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-menu img {
+    margin: 0 auto;
+  }
+
+  /* Making the footer responsive */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container h2 {
+    margin-top: 30px;
   }
 }
