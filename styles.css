@@ -56,7 +56,7 @@ a:hover {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: no-repeat url("images/hero.jpg") center center/cover;
   color: #fff;
@@ -81,7 +81,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 85vh;
+  min-height: 85vh;
 }
 
 .hero-flex-container h2 {
@@ -208,6 +208,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 i {
